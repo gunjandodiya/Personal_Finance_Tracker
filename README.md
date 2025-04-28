@@ -1,47 +1,45 @@
 # Personal_Finance_Tracker
 
-### Project Structure & Workflow
+## Project Structure & Workflow
 This Excel-based project follows a 3-layer architecture:
 
 📑 Dataset (Dataset sheet): Contains raw monthly records of income and expenses
 📊 Pivot Analysis (Calculations sheet): Builds dynamic Pivot Tables for summarization
 📈 Dashboard Layer (Dashboard sheet): Visualizes insights using charts, cards, and graphs
 
-###🧾 Dataset Description
+## Dataset Description
 The dataset used in this project captures real-life finance entries across various categories:
 
-### Column Name	Description
-Date	Date of the transaction (dd-mm-yyyy)
-Type	Income or Expense
-Category	Spending/earning category (e.g. Housing, Job)
-Amount	Transaction amount
-Source	Platform/source of income (YouTube, Job, etc)
-Day	Weekday name (Mon, Tue, etc.) for trend analysis
-Month	Month name (Jan, Feb, etc.) for trend charts
-🧪 Feature Engineering (Excel Formula-Based)
+Date : Date of the transaction (dd-mm-yyyy)
+Type :	Income or Expense
+Category :	Spending/earning category (e.g. Housing, Job)
+Amount :	Transaction amount
+Day :	Weekday name (Mon, Tue, etc.) for trend analysis
+Month :	Month name (Jan, Feb, etc.) for trend charts
+
+## Feature Engineering (Excel Formula-Based)
 To enhance analysis and build insightful visualizations, we performed feature extraction from the raw Date column:
 
-New Column	Formula Used (in Excel)	Description
 Month	=TEXT(A2, "mmm")	Extracts 3-letter month name from Date
 Day	=TEXT(A2, "ddd")	Extracts weekday name (Mon, Tue, etc.) from Date
-These columns are crucial for:
 
-Monthly trend analysis in bar charts
-Weekday spending pattern visualization
-Grouping data in Pivot Tables dynamically
-🧠 These transformations allow the dashboard to stay dynamic, filterable, and timeline-aware.
+These transformations helps:
 
-🔍 Primary Analysis (Pivot Table Layer)
+  • Monthly trend visualization
+  • Weekday pattern analysis
+  • Dynamic grouping in PivotTables
+
+## Pivot Table Analysis Layer
 The Calculations sheet is dedicated to:
 
-Creating Pivot Tables for income and expense aggregation
-Calculating KPIs like total income, total spending, available balance
-Deriving monthly and weekly trends
-Feeding structured results into the dashboard using linked cells
-💡 This sheet acts as the engine powering the dashboard – update the Data sheet, and everything auto-updates.
+  • Creating Pivot Tables for income and expense aggregation
+  • Calculating KPIs like total income, total spending, available balance
+  • Deriving monthly and weekly trends
+  • Feeding structured results into the dashboard using linked cells
+
 
 ### Key Dashboard Metrics
-Metric	Value
+
 💰 Available Balance	$35,249
 📥 Total Income	$65,440
 📤 Total Spending	$30,191
@@ -64,4 +62,3 @@ Excel Charts	Column, Donut, Line, KPI layout
 Conditional Formatting	Highlighting spending levels
 Excel Formulas	SUMIFS, MAX, TEXT, VLOOKUP, dynamic ranges
 Icons/Emojis	Visual enhancement of sections/cards
-# Personal_Finance_Tracker
