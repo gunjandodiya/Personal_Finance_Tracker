@@ -1,3 +1,5 @@
+# Personal_Finance_Tracker
+
 ### Project Structure & Workflow
 This Excel-based project follows a 3-layer architecture:
 
