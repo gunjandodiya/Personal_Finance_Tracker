@@ -5,10 +5,10 @@ This Excel-based project follows a 3-layer architecture:
 📊 Pivot Analysis (Calculations sheet): Builds dynamic Pivot Tables for summarization
 📈 Dashboard Layer (Dashboard sheet): Visualizes insights using charts, cards, and graphs
 
-##🧾 Dataset Description
+###🧾 Dataset Description
 The dataset used in this project captures real-life finance entries across various categories:
 
-Column Name	Description
+### Column Name	Description
 Date	Date of the transaction (dd-mm-yyyy)
 Type	Income or Expense
 Category	Spending/earning category (e.g. Housing, Job)
@@ -38,7 +38,7 @@ Deriving monthly and weekly trends
 Feeding structured results into the dashboard using linked cells
 💡 This sheet acts as the engine powering the dashboard – update the Data sheet, and everything auto-updates.
 
-📊 Key Dashboard Metrics
+### Key Dashboard Metrics
 Metric	Value
 💰 Available Balance	$35,249
 📥 Total Income	$65,440
